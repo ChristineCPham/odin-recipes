@@ -1,0 +1,92 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: .5% 2.5%;
+    --recipes-border: .25em solid white;
+    --recipes-margin: .5em;
+    --recipes-shadow: 0 0 .5em .5em rgb(150, 150, 150);
+}
+
+.recipes {
+    display: grid;
+    grid-template-areas:
+    "christmas-cookies taco-soup"
+    "dalgona-candy dalgona-candy";
+    text-align: center;
+}
+
+.recipes a {
+    text-decoration: none;
+    color: black;
+}
+
+.recipes img {
+    width: 50%;
+}
+
+.christmas-cookies {
+    grid-area: christmas-cookies;
+    border: var(--recipes-border);
+    margin: var(--recipes-margin);
+}
+
+.christmas-cookies:hover {
+    box-shadow: var(--recipes-shadow)
+}
+
+.taco-soup {
+    grid-area: taco-soup;
+    border: var(--recipes-border);
+    margin: var(--recipes-margin);
+    padding: 1em;
+}
+
+.taco-soup:hover {
+    box-shadow: var(--recipes-shadow)
+}
+
+.dalgona-candy {
+    grid-area: dalgona-candy;
+    border: var(--recipes-border);
+    margin: var(--recipes-margin);
+    padding: 1em;
+}
+
+.dalgona-candy:hover {
+    box-shadow: var(--recipes-shadow)
+}
+
+body {
+    border: .5em double black;
+    border-radius: 3%;
+    box-shadow: -1em .8em 0em 100em gray
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    position: relative; 
+    font-size: 90%;
+    bottom: 1em;
+    color: rgb(20, 20, 20);
+}
+
+h1{
+    font-size: 3rem;
+    padding: 0%;
+    margin: .5em 2.5%;
+}
+
+p {
+    font-size: 1em;
+}
+
+img {
+    display: block;
+    margin: 1em auto;
+    width: 50%;
+}
+
+a {
+    padding: 0%;
+}
