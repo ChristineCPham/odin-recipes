@@ -58,7 +58,7 @@
 body {
     border: .5em double black;
     border-radius: 3%;
-    box-shadow: -1em .8em 0em 100em gray
+    box-shadow: -1em .8em 0em 100em rgb(209, 209, 209)
 }
 
 .details {
@@ -89,4 +89,12 @@ img {
 
 a {
     padding: 0%;
+}
+
+.credits {
+    border-top: .5em double black;
+}
+
+.title {
+        border-bottom: .5em double black;
 }
