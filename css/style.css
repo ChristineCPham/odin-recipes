@@ -4,14 +4,14 @@
     --recipes-border: .25em solid white;
     --recipes-margin: .5em;
     --recipes-shadow: 0 0 .5em .5em rgb(150, 150, 150);
+    --recipes-padding: 5vh;
 }
 
 .recipes {
-    display: grid;
-    grid-template-areas:
-    "christmas-cookies taco-soup"
-    "dalgona-candy dalgona-candy";
+    display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .recipes a {
@@ -24,9 +24,9 @@
 }
 
 .christmas-cookies {
-    grid-area: christmas-cookies;
     border: var(--recipes-border);
     margin: var(--recipes-margin);
+    padding: var(--recipes-padding)
 }
 
 .christmas-cookies:hover {
@@ -34,10 +34,9 @@
 }
 
 .taco-soup {
-    grid-area: taco-soup;
     border: var(--recipes-border);
     margin: var(--recipes-margin);
-    padding: 1em;
+    padding: var(--recipes-padding)
 }
 
 .taco-soup:hover {
@@ -45,10 +44,9 @@
 }
 
 .dalgona-candy {
-    grid-area: dalgona-candy;
     border: var(--recipes-border);
     margin: var(--recipes-margin);
-    padding: 1em;
+    padding: var(--recipes-padding)
 }
 
 .dalgona-candy:hover {
